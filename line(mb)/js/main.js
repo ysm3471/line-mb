@@ -26,6 +26,12 @@ headerMenu.forEach(function(item,order){
 // 화면에 따라 탑메뉴의 포커싱 위치가 바뀜
 let order = 0;
 let barWidth = headerMenu[0].getBoundingClientRect().width;
+barLeft = headerMenu[0].offsetLeft;
+focusBar.style = `		
+width : ${barWidth}px;
+left : ${barLeft}px;
+`;	 // 초기 위치 지정(모바일 환경에 따라서 left 위치가 바뀜)
+
 window.onscroll = function() {
 	let y = window.scrollY;	// 화면의 y축 높이
 	switch (true) { 	//범위 사용 시에는 true 사용
