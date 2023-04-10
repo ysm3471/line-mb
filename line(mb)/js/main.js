@@ -22,10 +22,10 @@ headerMenu.forEach(function(item,order){
 		sections[order].scrollIntoView({behavior : "smooth", block:'start'}); // 특정 엘리먼트로 화면을 이동하는 메소드
 	}
 })
-console.log(headerMenu[0].offsetLeft);
+
 // 화면에 따라 탑메뉴의 포커싱 위치가 바뀜
 let order = 0;
-let barWidth = headerMenus.children[0].getBoundingClientRect().width;
+let barWidth = headerMenu[0].getBoundingClientRect().width;
 window.onscroll = function() {
 	let y = window.scrollY;	// 화면의 y축 높이
 	switch (true) { 	//범위 사용 시에는 true 사용
