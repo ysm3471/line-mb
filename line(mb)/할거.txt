@@ -1,0 +1,10 @@
+main
+langlist 클릭시 나오는 거
+gnb 바 따라오는 거
+section3 nav바 정렬
+
+sub2 
+메뉴 누르면 나오고 들어가는 거
+메뉴 li 누르면 리스트 나오고 들어가는 거
+langlist 클릭 시 나오는 거
+top 버튼 효과
